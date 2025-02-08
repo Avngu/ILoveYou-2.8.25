@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #ffe6e6;
+}
+
+.valentine-gif {
+    max-width: 300px;
+    margin: 20px;
+}
+
+.question {
+    color: #ff4d4d;
+    font-size: 2.5rem;
+    margin: 20px;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.yes-button {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.no-button {
+    background-color: gray;
+    color: white;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.message {
+    color: #ff4d4d;
+    font-size: 2rem;
+    margin: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
